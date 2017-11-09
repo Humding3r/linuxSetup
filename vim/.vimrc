@@ -1,6 +1,7 @@
-"Humding3r's VIMRC File
+" Humding3r's VIMRC File
 
 execute pathogen#infect()
+set linespace=0
 
 " show line numbers
 set number
