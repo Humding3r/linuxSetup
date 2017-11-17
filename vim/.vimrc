@@ -1,10 +1,15 @@
 " Humding3r's VIMRC File
-
+ 
 execute pathogen#infect()
+let g:airline_right_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_left_alt_sep= ''
+let g:airline_left_sep = ''
 set linespace=0
 
-" show line numbers
+" show line numbers and relative line numbers
 set number
+set relativenumber
 
 " remap movement keys
 noremap l h
