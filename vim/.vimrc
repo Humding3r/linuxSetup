@@ -2,6 +2,7 @@
  
 execute pathogen#infect()
 set linespace=0
+set nocompatible
 
 " show line numbers and relative line numbers
 set number
@@ -23,4 +24,3 @@ set expandtab
 call plug#begin('~/.vim/plugged')
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 call plug#end()
-syntax on
