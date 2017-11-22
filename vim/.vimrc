@@ -3,15 +3,20 @@
 execute pathogen#infect()
 set linespace=0
 set nocompatible
+set path +=**
+set wildmenu
 
 " show line numbers and relative line numbers
 set number
 set relativenumber
-
-" remap movement keys
+" remap keys
 noremap l h
 noremap ; l
-noremap h ;
+noremap h i
+noremap k gk
+noremap j gj
+noremap gj j
+noremap gk k
 
 syntax on
 filetype plugin indent on
