@@ -1,8 +1,8 @@
 " Humding3r's VIMRC File
  
-execute pathogen#infect()
 set linespace=0
 set nocompatible
+filetype off
 set path +=**
 set wildmenu
 
@@ -26,6 +26,15 @@ set tabstop=4
 set shiftwidth=4
 " on pressing tab, insert 4 spaces
 set expandtab
+
 call plug#begin('~/.vim/plugged')
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 call plug#end()
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Valloric/YouCompleteMe'
+call vundle#end()
